@@ -1,5 +1,5 @@
 # 💫 About Me:
-👋 Hey there! I'm Riit Walia, a Full Stack Developer proficient in Java, Spring Boot, C++, and AWS. I'm also experienced in front-end technologies like React and back-end frameworks like Node.js. My expertise extends to cloud services like Lambda, DynamoDB, and S3, as well as containerization tools such as Docker and Kubernetes. With a strong foundation in database management systems (NoSQL, RDBMS), I'm also skilled in technologies like PHP, HTML/CSS, JavaScript, Spring MVC, and MySQL. Currently, I'm focused on mastering Golang, Java 17, and Spring Boot 3. Let's connect and collaborate on innovative projects!
+👋 Hey there! I'm Rahul Walia, a Full Stack Developer proficient in Java, Spring Boot, C++, and AWS. I'm also experienced in front-end technologies like React and back-end frameworks like Node.js. My expertise extends to cloud services like Lambda, DynamoDB, and S3, as well as containerization tools such as Docker and Kubernetes. With a strong foundation in database management systems (NoSQL, RDBMS), I'm also skilled in technologies like PHP, HTML/CSS, JavaScript, Spring MVC, and MySQL. Currently, I'm focused on mastering Golang, Java 17, and Spring Boot 3. Let's connect and collaborate on innovative projects!
 
 
 ## 🌐 Socials:
