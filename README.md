@@ -1,79 +1,112 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=Rahul%20Walia&fontSize=56&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%E2%80%A2%20Java%20and%20Spring%20Boot%20%E2%80%A2%20Cloud&descAlignY=60&descSize=18" width="100%" alt="header"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:00f5a0,50:00b8d9,100:7928ca&height=230&section=header&text=Rahul%20Walia&fontSize=62&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=Backend%20Engineer%20%E2%80%A2%20Event-Driven%20Systems%20%E2%80%A2%20Cloud&descAlignY=62&descSize=18" width="100%" alt="header"/>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2C9CF0&center=true&vCenter=true&width=600&lines=Building+scalable+backends+with+Java+%26+Spring+Boot;Event-driven+systems+%26+cloud-native+apps;Currently+learning+Golang+%F0%9F%9A%80;Solving+DSA+problems+in+C%2B%2B)](https://github.com/ravagerahul)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&pause=900&color=00F5A0&center=true&vCenter=true&width=700&height=40&lines=%24+whoami+%E2%86%92+Rahul+Walia;%24+stack+%E2%86%92+Java+%C2%B7+Spring+Boot+%C2%B7+Kafka+%C2%B7+AWS;%24+building+%E2%86%92+event-driven+systems+with+LLMs;%24+learning+%E2%86%92+Golang;%24+status+%E2%86%92+open+to+opportunities)](https://github.com/ravagerahul)
 
-![Profile Views](https://komarev.com/ghpvc/?username=ravagerahul&label=Profile%20Views&color=2c5364&style=flat-square)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rahulwalia2/)
-[![Email](https://img.shields.io/badge/Email-Say%20Hi-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:riitwalia38@gmail.com)
+<a href="https://www.linkedin.com/in/rahulwalia2/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:riitwalia38@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<img src="https://komarev.com/ghpvc/?username=ravagerahul&label=VIEWS&color=00b8d9&style=for-the-badge"/>
 
 </div>
 
 ---
 
-## 👨‍💻 About Me
+## `~/about.sh`
 
-- 🔭 Full Stack Developer building backend-heavy, cloud-native applications
-- 🌱 Currently learning **Golang**, **Java 17** and **Spring Boot 3**
-- ⚡ Working on event-driven architectures with **Kafka** and **AWS**
-- 🧩 Practising **Data Structures & Algorithms** in C++ and Java
-- 💬 Ask me about Java, Spring Boot, microservices, AWS
+```java
+public class Rahul extends FullStackDeveloper implements BackendEngineer {
 
-## 🛠️ Tech Stack
+    String   location   = "India";
+    String[] coreStack  = { "Java 17", "Spring Boot 3", "Kafka", "PostgreSQL", "AWS" };
+    String[] frontend   = { "React", "TypeScript", "JavaScript" };
+    String[] devops     = { "Docker", "Kubernetes", "Jenkins", "Caddy" };
 
-**Languages**
+    String currentlyBuilding = "SpendSense AI - SMS -> Kafka -> LLM -> Postgres pipeline";
+    String currentlyLearning = "Golang, distributed systems, RAG";
+    String funFact           = "I solve DSA problems daily in C++";
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+    public boolean openToWork() { return true; }
+}
+```
 
-**Backend & Frontend**
+## ⚡ Flagship Project: SpendSense AI
 
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+> Turns the bank SMS that already lands on your phone into a **categorized, queryable spending history**. UPI apps expose no API, so the SMS is the one reliable channel.
 
-**Cloud, DevOps & Data**
+```mermaid
+flowchart LR
+    A[iOS Shortcut] -->|POST SMS| B[ingestion-service]
+    B -->|raw-sms-received| K1{{Kafka}}
+    K1 --> C[extraction-service<br/>LLM parsing]
+    C -->|transaction-extracted| K2{{Kafka}}
+    K2 --> D[storage-service<br/>Postgres + pgvector]
+    D -->|transaction-stored| K3{{Kafka}}
+    K3 --> E[categorization-service]
+    K3 --> F[anomaly-service]
+    D --> G[dashboard-service BFF]
+    G --> H[React dashboard]
+    G --> I[query-service<br/>NL chat + vector search]
+```
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white)
+| | |
+|---|---|
+| 🏗️ **Architecture** | 8 Spring Boot microservices in a Gradle multi-module build, communicating over Kafka |
+| 🧠 **AI** | LLM extracts amount, merchant, direction and date from raw SMS; embeddings in **pgvector** power natural-language chat |
+| 🔒 **Privacy** | Account balances are masked before text ever reaches the model |
+| 🛡️ **Reliability** | Correlation IDs trace each message end to end; 3 failed attempts route to a dead-letter topic instead of losing data |
+| 🚢 **Deploy** | Docker Compose with Caddy as the single entry point |
+| 📦 **Codebase** | ~150k lines of Java, ~65k of TypeScript |
 
-## 🚀 Featured Projects
+[![Repo](https://img.shields.io/badge/View%20Repo-SpendSense%20AI-00f5a0?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ravagerahul/SpendSense-AI-Event-Driven-Personal-Finance-Intelligence-Platform)
 
-| Project | What it does | Stack |
-|---|---|---|
-| [**SpendSense AI**](https://github.com/ravagerahul/SpendSense-AI-Event-Driven-Personal-Finance-Intelligence-Platform) | Event-driven personal finance intelligence platform | `Java` `Spring Boot` `Event-driven` |
-| [**GPS Alzheimer's Patient Monitoring**](https://github.com/ravagerahul/GPS-based-Alzheimer-dementia-patientmonitoring-system) | GPS-based tracking and monitoring system for dementia patients | `Java` |
-| [**DSA**](https://github.com/ravagerahul/DSA) | Daily coding problems and solutions | `C++` |
-| [**Library Management System**](https://github.com/ravagerahul/library-management-system) | Library management web app | `HTML` |
-| [**Todo App**](https://github.com/ravagerahul/todo-app) | Task manager app | `JavaScript` |
-
-## 📊 GitHub Stats
+## 🛠️ Tech Arsenal
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=ravagerahul&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="stats"/>
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ravagerahul&layout=compact&theme=tokyonight&hide_border=true" alt="top languages"/>
-
-<img src="https://streak-stats.demolab.com?user=ravagerahul&theme=tokyonight&hide_border=true" alt="streak"/>
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 
 </div>
 
-## 🤝 Let's Connect
+## 📂 More Projects
 
-I'm open to collaborating on backend and cloud projects. Reach out on [LinkedIn](https://www.linkedin.com/in/rahulwalia2/) or by [email](mailto:riitwalia38@gmail.com).
+| Project | Description | Stack |
+|---|---|---|
+| [🧬 **GPS Dementia Patient Monitoring**](https://github.com/ravagerahul/GPS-based-Alzheimer-dementia-patientmonitoring-system) | Real-time GPS tracking system to monitor Alzheimer's and dementia patients | `Java` |
+| [🧮 **DSA**](https://github.com/ravagerahul/DSA) | Daily data structures and algorithms practice | `C++` |
+| [📚 **Library Management System**](https://github.com/ravagerahul/library-management-system) | Web app to manage books and members | `HTML` |
+| [✅ **Todo App**](https://github.com/ravagerahul/todo-app) | Task manager with a clean UI | `JavaScript` |
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,100:0f2027&height=100&section=footer" width="100%" alt="footer"/>
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=ravagerahul&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="stats"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ravagerahul&layout=compact&theme=radical&hide_border=true" alt="top languages"/>
+
+<img src="https://streak-stats.demolab.com?user=ravagerahul&theme=radical&hide_border=true" alt="streak"/>
+
+</div>
+
+## 🤝 Let's Build Something
+
+I'm looking for backend and full stack roles where I can work on distributed, event-driven systems. If you're hiring or want to collaborate, reach out on [LinkedIn](https://www.linkedin.com/in/rahulwalia2/) or [email me](mailto:riitwalia38@gmail.com).
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7928ca,50:00b8d9,100:00f5a0&height=110&section=footer" width="100%" alt="footer"/>
